@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一劳永逸平台--欢迎您</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>  
+        .navbar-brand {  
+            display: flex;  
+            align-items: center; /* 垂直居中 */  
+        }  
+        .navbar-brand img {  
+            height: 30px; /* 根据需要调整图标大小 */  
+            margin-right: 5px; /* 图标和标题之间的间距 */  
+        }  
+        /* 如果你想要标题在屏幕变小时也居中，可以添加以下媒体查询 */  
+        @media (max-width: 991.98px) {  
+            .navbar-expand-lg .navbar-nav .nav-link {  
+                text-align: center; /* 仅在折叠导航时使链接居中 */  
+            }  
+            .navbar-toggler {  
+                margin-right: auto; /* 将折叠按钮移动到右侧 */  
+                margin-left: auto; /* 将折叠按钮移动到左侧（可选，确保居中） */  
+            }  
+        }  
+    </style>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/all.css" rel="stylesheet">
+    <link href="./css/bxslider.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="./css/fileinput.min.css" rel="stylesheet">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bxslider.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script src="./js/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="./js/fileinput.min.js"></script>
+    <script src="./js/localeszh.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+            <span class="navbar-toggler-icon"></span>  
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarNav">  
+            <ul class="navbar-nav">  
+                <li class="nav-item active">  
+                    <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>  
+                </li>  
+                <li class="nav-item">  
+                    <a class="nav-link" href="#">关于我们</a>  
+                </li>  
+                <!-- 添加更多的导航链接 -->  
+            </ul>  
+        </div>  
+    </nav>   
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./source/vv.jpg"" style="width: 100%; height: 100%;"
+                    alt="图片1">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./source/1.jpg"" style="width: 100%; height: 100%;"
+                    alt="图片2">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./source/hhd.jpg" style="width: 100%; height: 100%;"
+                    alt="图片3">
+            </div>
+
+
+            <div class="swiper-slide">
+                <img src="./source/lkk.jpg" style="width: 100%; height: 100%;"
+                    alt="图片·4">
+            </div>
+            <div class="swiper-slide">
+                <img src="./source/ddd.jpg" style="width: 100%; height: 100%;"
+                    alt="图片·5">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <style type="text/css">
+        .swiper-container {
+            width: 100%;
+            height: 180px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        $(document).ready(function () {
+            setSwiperHeight();
+            $(window).resize(function () {
+                var resizeSwiperTimer;
+                clearTimeout(resizeSwiperTimer);
+                resizeSwiperTimer = setTimeout(function () {
+                    setSwiperHeight();
+                }, 200);
+            });
+
+            function setSwiperHeight() {
+                const screen_width = $(window).width();
+                const swiper_heigth = screen_width / 2.9;
+                if (swiper_heigth > 175) {
+                    $('.swiper-container').css('height', swiper_heigth);
+                }
+            }
+        });
+    </script>
+
+    <section id="home-about-us" class="container index-sv-items">
+
+        <div class="row" style="border: 1px solid #b5e1d0;  ">
+            <div class="col-xs-12 col-md-6">
+                <div class="grid-content bg-purple-light about_content_box">
+                    <img style="" src="./source/微信图片_20240416221652.jpg"">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6" style="background-color:#b5e1d0;height:300px;">
+                <div class="grid-content bg-purple-light about_content_box">
+                    <div style="padding:10px">
+                        <h2 style="color:#0c5034">让老人幸福，促社会和谐</h2>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国人盛行的是：“百善孝为先”，从历史文化传承来说，尊老敬老要老是中华民族的传统美德，别的民族咱们先不管不论，但是中华民族之所以是中华民族，之所以血浓于水，之所以历尽沧桑生生不息，之所以“人情味”非常浓厚，就是因为咱们中国人关爱老人爱护儿童。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="why-choose-us" class=" visible-lg-block index-sv-items">
+
+        <!-- choose 选择-->
+        <div class="choose ">
+            <div class="Title case_head">
+                <h3>Our Advantage</h3>
+                <i></i>
+            </div>
+            <div class="mainCon">
+                <div class="menu clearfix">
+                    <dl class="clearfix cur">
+                        <dt><img src="./source/choose_icon01.png" width="53" height="106" alt=""></dt>
+                        <dd>
+                            <p>智能家居<br>助老服务</p>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><img src="./source/choose_icon04.png" width="53" height="106" alt=""></dt>
+                        <dd>
+                            <p>健康餐饮<br>配送服务</p>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><img src="./source/choose_icon05.png" width="53" height="106" alt=""></dt>
+                        <dd>
+                            <p>家庭康复<br>护理服务</p>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><img src="./source/choose_icon04.png" width="53" height="106" alt=""></dt>
+                        <dd>
+                            <p>线上医疗<br>咨询服务</p>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><img src="./source/choose_icon03.png" width="53" height="106" alt=""></dt>
+                        <dd>
+                            <p>老年社交<br>活动服务</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="conBox">
+
+                    <div class="con" style="background: url('./source/R-C.jpg') no-repeat center;">  
+                        <div class="container">  
+                            <dl class="clearfix2" style="background-color: white; padding: 5px;"> 
+                                <dt>01</dt>  
+                                <dd>  
+                                    <h3><em>智能家居</em></h3>  
+                                    <p>开发一款智能家居系统，通过互联网技术，实现远程控制家电，为老年人提供更便利的生活服务。</p>  
+                                </dd>  
+                            </dl>  
+                        </div>  
+                    </div>
+               
+
+                    <div class="con" style="background: url(./source/food.jpg" ) no-repeat center;">
+                        <div class="container">
+                            <dl class="clearfix2" style="background-color: white; padding: 5px;">
+                                <dt>02</dt>
+                                <dd>
+                                    <h3><em>饮食配送</em></h3>
+                                    <p>开设一家健康饮食外卖，为老年人提供营养均衡口味多样的饮食选择，满足老年人的健康需求。</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="con" style="background: url(./source/S.png) no-repeat center;">
+                        <div class="container">
+                            <dl class="clearfix2" style="background-color: white; padding:5px;">
+                                <dt>03</dt>
+                                <dd>
+                                    <h3>
+                                        <em>家庭康复护理</em>
+                                    </h3>
+                                    <p>
+                                        开发一款康复护理APP，提供专业的康复护理务和健康管理，帮助老年人恢复身体健康。
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="con" style="background: url(./source/j.jpg" ) no-repeat center;">
+                        <div class="container">
+                            <dl class="clearfix2" style="background-color: white; padding: 8px;">
+                                <dt>04</dt>
+                                <dd>
+                                    <h3><em>线上医疗咨询</em>
+                                    </h3>
+                                    <p>
+                                        建立一个线上医疗咨询平台，为老年人提供专业、及时的医疗咨询服务，解决老年人就医困难的问题。
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="con" style="background: url(./source/k.jpg"
+                        ) no-repeat center;">
+                        <div class="container">
+                            <dl class="clearfix2" style="background-color: white; padding: 8px;">
+                                <dt>05</dt>
+                                <dd>
+                                    <h3>
+                                        <em>老年社交</em>
+                                    </h3>
+                                    <p>开发一款社交应用，为老年人提供线上社交活云促进老年人的社交交流和情感沟通。
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(".choose .mainCon .conBox .con")
+                .eq(0)
+                .show()
+                .siblings()
+                .hide();
+            $(".choose .mainCon .menu dl").hover(function () {
+                $(this)
+                    .addClass("cur")
+                    .siblings()
+                    .removeClass("cur");
+                $(".choose .mainCon .conBox .con")
+                    .eq($(this).index())
+                    .fadeIn()
+                    .siblings()
+                    .hide();
+            })
+        </script>
+
+    </section>
+
+    <section class="index-sv-items container fadeInUp">
+        <div class="row">
+            <div class="Title case_head col-sm-12">
+                <h3>健康餐饮，乐享生活</h3>
+                <p>Living Healthy Catering </p>
+                <i></i>
+            </div>
+
+            <div class="col-sm-12">
+                <img class="col-sm-12" src="./source/780.jpg" alt="" style="max-width: 100%">
+            </div>
+            <div class="col-sm-12">
+                <span class="col-sm-12" style="line-height: 60px">
+                  <center>养老途中我们可以学习烹茶、在茶道文化中颐养身心，学习鉴别各个等级的沉香，熏着沉香，品着老茶，享受夕阳。</center>
+                </span>
+            </div>
+            <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <img src="./source\OIP-C (9).jpg" class="center-block" alt="" style="max-width: 100%">
+                </div>
+                <div class="col-sm-6">
+                    <img src="./source/OIP-C (10).jpg" class="center-block" alt="" style="max-width: 100%">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <span class="col-sm-12" style="line-height: 60px">
+                    <center>互助养老，学在其中，为在其中，乐在其中</center>
+                    
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <canvas width="1167" height="885"
+        style="position: fixed; top: 0px; left: 0px; z-index: -2; width: 100%; height: 100%; pointer-events: none;">
+    </canvas>
+
+    <div class="case_box" style="background: url(https://www.nbtxlj.com/images/b5.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="Title case_head col-sm-12">
+                        <h3>老年社交，乐在其中</h3>
+                        <p>Elderly social interaction</p>
+                        <i></i>
+                    </div>
+                    <div class="case_list">
+                        <div class="col-sm-6 col-md-3  product_img" data-move-y="200px"
+                            style="transition: all 1s ease, opacity 1.5s ease; opacity: 1;">
+                            <img src="./source/OIP-C (4).jpg" alt="运动" class="opacity_img">
+                            <p class="product_title">运动</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3  product_img" data-move-y="200px"
+                            style="transition: all 1s ease, opacity 1.5s ease; opacity: 1;">
+                            <img src="./source/OIP-C (5).jpg" alt="园艺" class="opacity_img">
+                            <p class="product_title">园艺</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3  product_img" data-move-y="200px"
+                            style="transition: all 1s ease, opacity 1.5s ease; opacity: 1;">
+                            <img src="./source/OIP-C (6).jpg" alt="摄影" class="opacity_img">
+                            <p class="product_title">摄影</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3  product_img" data-move-y="200px"
+                            style="transition: all 1s ease, opacity 1.5s ease; opacity: 1;">
+                            <img src="./source/下载 (2).jpg" alt="下棋" class="opacity_img">
+                            <p class="product_title">下棋</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5 col-lg-offset-5 col-xl-offset-5">
+                <a href="./link.html" class="btn btn-info center-block "
+                    role="button">加入我们</a>
+            </div>
+
+  
+
+
+</body>
+
+</html>
